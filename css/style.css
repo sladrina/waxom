@@ -86,7 +86,13 @@ header nav {
     float: left;
     margin-top: -12px;
 }
-
+.burger {
+    width: 50px;
+    height: 50px;
+    display: none;
+    background-image:  url('../img/Hamburger_icon.png');
+    background-size: 100%;
+}
 .nav-wrapper {
     display: inline-block;
 }
@@ -1164,4 +1170,94 @@ footer {
 
 .copyright p a:hover {
     color: #c7b299;
+}
+@media screen and (max-width: 400px) {
+    .burger {
+        display: block;
+        float: right;
+        margin-top: 13%;
+        margin-right: 5%;
+    }
+    .nav-wrapper {
+        visibility: hidden;
+        margin: 0 auto;
+        height: auto;
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-wrapper li {
+        height: 40px;
+        text-align: center;
+        margin-top: 2px;
+    }
+    .nav-wrapper li a {
+        width: 100%;
+    }
+    .header-wrapper, .slider-wrapper, .ideas, .textbox, .menu-projects, .wrapper-photo, .mobile img, .stat, .footer-up, .posts-slider  {
+        display: none;
+    }
+    header {
+        max-height: 140px;
+    }
+    .services, .projects, .mobile-text, .posts {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .services > .service {
+        margin-top: 15px;
+    }
+    .projects h2 , .mobile-text h2, .posts h2{
+        font-size: 26px;
+        padding-bottom: 12px;
+        text-align: center;
+    }
+    .projects p, .posts p {
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+    .projects-button {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .video li:nth-child(2) {
+        font-size: 26px;
+        padding-top: 14px;
+    }
+    .video li:nth-child(3) {
+    font-size: 16px;
+    padding-top: 14px;
+    }
+    .video li:nth-child(4) {
+        font-family: Montserrat;
+        font-size: 13px;
+        padding-top: 14px;
+    }
+    .video {
+        display: flex;
+        min-height: 350px;
+    }
+    .mobile-text {
+        margin-top: 0;
+    }
+    .mobile-text p {
+        font-size: 16px;
+        text-align: -webkit-center;
+    }
+    .mobile-text ul {
+        margin-left: 24px;
+    }
+    .mobile-text li {
+        font-size: 15px;
+        padding-left: 34px;
+        margin-top: 10px;
+    }
+    .wrapper-flex ul {
+        margin-top: 20px;
+        padding-bottom: 15px;
+        margin-right: 0;
+    }
+    .company {
+        margin-top: 0;
+    }
 }
