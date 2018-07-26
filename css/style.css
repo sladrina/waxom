@@ -935,83 +935,8 @@ main {
     height: 210px;
     margin-top: 30px;
     margin-right: 50px;
-}
-
-@-webkit-keyframes company-image {
-    0% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-
-    50% {
-        -webkit-transform: translateY(-4px);
-        transform: translateY(-4px);
-    }
-
-    100% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes company-image {
-    0% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-
-    50% {
-        -webkit-transform: translateY(-4px);
-        transform: translateY(-4px);
-    }
-
-    100% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-}
-
-@-webkit-keyframes company-image-float {
-    100% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes company-image-float {
-    100% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-}
-
-.company-image {
-    display: inline-block;
-    vertical-align: middle;
     -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
 }
-
-.company-image, .company-image:focus {
-    -webkit-animation-name: company-image-float, company-image;
-    animation-name: company-image-float, company-image;
-    -webkit-animation-duration: .7s, 2.5s;
-    animation-duration: .7s, 2.5s;
-    -webkit-animation-delay: 0s, .7s;
-    animation-delay: 0s, .7s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
-}
-
 .company-image:hover {
     filter: sepia(100%);
 }
@@ -1259,5 +1184,36 @@ footer {
     }
     .company {
         margin-top: 0;
+    }
+    .copyright-left-side, .copyright-right-side {
+        margin: 0;
+    }
+    .copyright-left-side {
+        margin-top: 20px;
+    }
+    .copyright-left-side p {
+        font-size: 12px;
+    }
+    .copyright-right-side {
+        margin-bottom: 20px;
+    }
+    .company{
+        clear: both;
+        width: 100%;
+        margin-top: 0;
+        background: url(../img/photo-company.jpg) 80% 0 no-repeat;
+    }
+    .company ul {
+        min-height: 0;
+    }
+    .company-image{
+        height: auto;
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        margin: 25px 0;
+    }
+    .company-image img {
+        width: 50%;
     }
 }
