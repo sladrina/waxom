@@ -1103,11 +1103,14 @@ footer {
         margin-top: 13%;
         margin-right: 5%;
     }
+    .burger:hover ~.nav-wrapper {
+        visibility: visible;
+    }
     .nav-wrapper {
         visibility: hidden;
         margin: 0 auto;
         height: auto;
-        width: 380px;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
