@@ -1,5 +1,5 @@
 @font-face {
-    font-family:'Montserrat';
+    font-family: 'Montserrat';
     src: url('../fonts/Montserrat/Montserrat Regular.eot');
     src: url('../fonts/Montserrat/Montserrat Regular.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Montserrat/Montserrat Regular.woff2') format('woff2'),
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family:'Montserrat-Light';
+    font-family: 'Montserrat-Light';
     src: url('../fonts/Montserrat/Montserrat Light.eot');
     src: url('../fonts/Montserrat/Montserrat Light.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Montserrat/Montserrat Light.woff2') format('woff2'),
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family:'Raleway-Bold';
+    font-family: 'Raleway-Bold';
     src: url('../fonts/Raleway/Raleway Bold.eot');
     src: url('../fonts/Raleway/Raleway Bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Raleway/Raleway Bold.woff2') format('woff2'),
@@ -38,7 +38,7 @@
 }
 
 @font-face {
-    font-family:'Raleway';
+    font-family: 'Raleway';
     src: url('../fonts/Raleway/Raleway.eot');
     src: url('../fonts/Raleway/Raleway.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Raleway/Raleway.woff2') format('woff2'),
@@ -50,55 +50,48 @@
     unicode-range: U+0020-04B1;
 }
 
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
 
-header
-{
+header {
     max-width: 1920px;
     margin: 0 auto;
     background-image: url('../img/photo.png');
     background-size: 100% 100%;
 }
 
-header nav{
-    width: 80%;
-    margin-left: 10%;
-    display: inline;
+header nav {
+    width: 100%;
+    display: block;
+    text-align: center;
 }
-.logo
-{
+
+.logo {
     font-family: Raleway;
     font-size: 34px;
     font-weight: 400;
-    display: block;
-    float: left;
     width: 190px;
-    margin-left: 19.5%;
     padding-top: 55px;
     text-align: right;
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+    margin-right: 60px;
 }
 
-.logo img
-{
+.logo img {
     display: block;
     float: left;
     margin-top: -12px;
 }
 
-.nav-wrapper
-{
-    float: right;
-    margin-right: 19.5%;
+.nav-wrapper {
+    display: inline-block;
 }
 
-.nav-wrapper li
-{
+.nav-wrapper li {
     display: block;
     float: left;
     margin-top: 62px;
@@ -106,8 +99,7 @@ header nav{
     list-style-type: none;
 }
 
-.nav-wrapper a
-{
+.nav-wrapper a {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 300;
@@ -116,18 +108,15 @@ header nav{
     color: #fff;
 }
 
-.nav-wrapper a:hover
-{
+.nav-wrapper a:hover {
     color: #c7b29a;
 }
 
-.nav-wrapper li:nth-child(8)
-{
+.nav-wrapper li:nth-child(8) {
     padding-right: 63px;
 }
 
-.nav-wrapper li:nth-child(9) a
-{
+.nav-wrapper li:nth-child(9) a {
     width: 18px;
     height: 24px;
     margin-top: -4px;
@@ -136,8 +125,7 @@ header nav{
     background-size: 18px 24px;
 }
 
-.nav-wrapper li:nth-child(10) a
-{
+.nav-wrapper li:nth-child(10) a {
     width: 24px;
     height: 24px;
     margin-top: -4px;
@@ -146,8 +134,7 @@ header nav{
     background-size: 24px 24px;
 }
 
-.header-wrapper
-{
+.header-wrapper {
     display: flex;
     clear: both;
     justify-content: space-around;
@@ -155,8 +142,7 @@ header nav{
     align-content: center;
 }
 
-.left-slider
-{
+.left-slider {
     display: block;
     width: 40px;
     height: 73px;
@@ -165,20 +151,17 @@ header nav{
     background-size: 40px 73px;
 }
 
-.header-wrapper
-{
+.header-wrapper {
     position: relative;
     padding-top: 309px;
 }
 
-.header-text
-{
+.header-text {
     display: flex;
     flex-direction: column;
 }
 
-.header-text li:nth-child(1)
-{
+.header-text li:nth-child(1) {
     font-family: Raleway;
     font-size: 36px;
     font-weight: 500;
@@ -188,8 +171,7 @@ header nav{
     color: #fff;
 }
 
-.header-text li:nth-child(2)
-{
+.header-text li:nth-child(2) {
     font-family: Raleway;
     font-size: 52px;
     font-weight: 700;
@@ -199,8 +181,7 @@ header nav{
     color: #fff;
 }
 
-.header-text li:nth-child(3)
-{
+.header-text li:nth-child(3) {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 300;
@@ -212,14 +193,12 @@ header nav{
     color: #fff;
 }
 
-.header-text li:nth-child(4)
-{
+.header-text li:nth-child(4) {
     display: block;
     margin: 0 auto;
 }
 
-.header-text li:nth-child(4) a
-{
+.header-text li:nth-child(4) a {
     font-family: Raleway;
     font-size: 14px;
     font-weight: 700;
@@ -237,20 +216,17 @@ header nav{
 
 }
 
-.header-text li:nth-child(4) a:hover
-{
+.header-text li:nth-child(4) a:hover {
     background-color: #736a62;
 }
 
-.header-text li:nth-child(4) a:active
-{
+.header-text li:nth-child(4) a:active {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.right-slider
-{
+.right-slider {
     display: block;
     width: 40px;
     height: 73px;
@@ -259,8 +235,7 @@ header nav{
     background-size: 40px 73px;
 }
 
-.slider-wrapper
-{
+.slider-wrapper {
     display: flex;
     clear: both;
     min-height: 280px;
@@ -268,21 +243,18 @@ header nav{
     align-items: flex-end;
 }
 
-.slider-wrapper ul
-{
+.slider-wrapper ul {
     width: 130px;
     padding-bottom: 30px;
     align-items: flex-end;
 }
 
-.slider-wrapper li
-{
+.slider-wrapper li {
     display: block;
     list-style-type: none;
 }
 
-.slider-wrapper li a
-{
+.slider-wrapper li a {
     display: block;
     float: left;
     width: 15px;
@@ -294,19 +266,16 @@ header nav{
     background-size: 15px 15px;
 }
 
-.slider-wrapper li a:hover
-{
+.slider-wrapper li a:hover {
     background-image: url('../img/slides-hover.png');
 }
 
-main
-{
+main {
     max-width: 1920px;
     margin: 0 auto;
 }
 
-.services
-{
+.services {
     display: flex;
     clear: both;
     width: 100%;
@@ -322,32 +291,28 @@ main
 .design,
 .development,
 .customization,
-.marketing
-{
+.marketing {
     width: 266px;
 }
 
 .design li,
 .development li,
 .customization li,
-.marketing li
-{
+.marketing li {
     list-style-type: none;
 }
 
 .design ul li:nth-child(1),
 .development ul li:nth-child(1),
 .customization ul li:nth-child(1),
-.marketing ul li:nth-child(1)
-{
+.marketing ul li:nth-child(1) {
     padding-bottom: 19px;
 }
 
 .design ul li:nth-child(2),
 .development ul li:nth-child(2),
 .customization ul li:nth-child(2),
-.marketing ul li:nth-child(2)
-{
+.marketing ul li:nth-child(2) {
     font-family: Raleway;
     font-size: 22px;
     font-weight: 600;
@@ -359,8 +324,7 @@ main
 .design ul li:nth-child(3),
 .development ul li:nth-child(3),
 .customization ul li:nth-child(3),
-.marketing ul li:nth-child(3)
-{
+.marketing ul li:nth-child(3) {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
@@ -369,55 +333,28 @@ main
     color: #8c8c8c;
 }
 
-.design
-{
-    margin-right: 33px;
-    text-align: center;
-}
-
-.development
-{
-    margin-right: 33px;
-    text-align: center;
-}
-
-.customization
-{
-    margin-right: 33px;
-    text-align: center;
-}
-
-.marketing
-{
-    text-align: center;
-}
-
-.design ul li svg,
-.development ul li svg,
-.customization ul li svg,
-.marketing ul li svg
-{
+.services > .service ul li svg {
     fill: rgb(85, 85, 85);
 }
-
-.design ul li svg:hover,
-.development ul li svg:hover,
-.customization ul li svg:hover,
-.marketing ul li svg:hover
-{
+.services > .service:hover ul li svg {
     fill: #deb887;
 }
 
-.design ul li:nth-child(2):hover,
-.development ul li:nth-child(2):hover,
-.customization ul li:nth-child(2):hover,
-.marketing ul li:nth-child(2):hover
-{
+.services > .service {
+    margin-right: 33px;
+    text-align: center;
+}
+.services > .service.marketing {
+    margin-right: 0;
+}
+
+.services > .service:hover ul li:nth-child(2) {
     color: #deb887;
 }
 
-.ideas
-{
+
+
+.ideas {
     position: relative;
     max-width: 1920px;
     min-height: 700px;
@@ -428,8 +365,7 @@ main
     background-color: #fbfaf8;
 }
 
-.ideas h2
-{
+.ideas h2 {
     font-family: Raleway;
     font-size: 30px;
     font-weight: 600;
@@ -440,8 +376,7 @@ main
     color: #555;
 }
 
-.ideas p
-{
+.ideas p {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 300;
@@ -453,23 +388,21 @@ main
     color: #8c8c8c;
 }
 
-.textbox
-{
+.textbox {
     display: flex;
     width: 100%;
     min-height: 150px;
     background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
-    background:    -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
-    background:      -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
-    background:     -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
-    background:         linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+    background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.wrapper-textbox
-{
+.wrapper-textbox {
     display: flex;
     max-width: 1000px;
     justify-content: space-between;
@@ -478,14 +411,11 @@ main
     width: 100%;
 }
 
-.text
-{
+.text {
     max-width: 620px;
 }
 
-
-.text h2
-{
+.text h2 {
     font-family: Raleway;
     font-size: 28px;
     font-weight: 400;
@@ -493,8 +423,7 @@ main
     color: #c7b299;
 }
 
-.text h2 span
-{
+.text h2 span {
     font-family: Raleway;
     font-size: 28px;
     font-weight: 400;
@@ -502,8 +431,7 @@ main
     color: #fff;
 }
 
-.text h3
-{
+.text h3 {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 300;
@@ -511,13 +439,11 @@ main
     color: #615855;
 }
 
-.button
-{
+.button {
     max-width: 170px;
 }
 
-.button a
-{
+.button a {
     font-family: Raleway;
     font-size: 14px;
     font-weight: 700;
@@ -535,26 +461,23 @@ main
     transition: all 400ms ease;
 }
 
-.button a:hover
-{
+.button a:hover {
     background-color: #736a62;
 }
 
-.button a:active
-{
+.button a:active {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
-.projects
-{
+
+.projects {
     clear: both;
     min-width: 100%;
     padding-top: 80px;
 }
 
-.projects h2
-{
+.projects h2 {
     font-family: Raleway;
     font-size: 30px;
     font-weight: 600;
@@ -563,8 +486,7 @@ main
     color: #555;
 }
 
-.projects p
-{
+.projects p {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 300;
@@ -576,12 +498,11 @@ main
     color: #8c8c8c;
 }
 
-.menu-projects
-{
+.menu-projects {
     margin: 0 auto;
 }
-.menu-projects ul
-{
+
+.menu-projects ul {
     display: flex;
     max-width: 650px;
     margin: 0 auto;
@@ -589,14 +510,12 @@ main
     flex-wrap: wrap;
 }
 
-.menu-projects li
-{
+.menu-projects li {
     padding-right: 20px;
     list-style-type: none;
 }
 
-.menu-projects li a
-{
+.menu-projects li a {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
@@ -610,41 +529,36 @@ main
     border-radius: 3px;
 }
 
-.menu-projects a:hover
-{
+.menu-projects a:hover {
     color: #fff;
     background-color: #998675;
 }
 
-.wrapper-flex
-{
+.wrapper-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.wrapper-photo
-{
+.wrapper-photo {
     display: flex;
     max-width: 1200px;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.wrapper-flex ul
-{
+
+.wrapper-flex ul {
     margin-top: 50px;
     margin-right: 30px;
     padding-bottom: 27px;
     background-color: #fbfaf8;
 }
 
-.wrapper-flex li
-{
+.wrapper-flex li {
     list-style-type: none;
 }
 
-.wrapper-flex h3
-{
+.wrapper-flex h3 {
     font-family: Raleway;
     font-size: 20px;
     font-weight: 500;
@@ -655,8 +569,7 @@ main
     color: #c7b29a;
 }
 
-.wrapper-flex span
-{
+.wrapper-flex span {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
@@ -669,8 +582,8 @@ main
     text-align: left;
     color: #d1d1d1;
 }
-.unit-projects
-{
+
+.unit-projects {
     margin-top: 50px;
     margin-right: 30px;
     padding-bottom: 27px;
@@ -679,15 +592,13 @@ main
     position: relative;
 }
 
-.unit-projects:hover
-{
-		filter: grayscale(40%);
+.unit-projects:hover {
+    filter: grayscale(40%);
 }
 
-.unit-projects:before
-{
-  content: url('../img/link.svg');
-   width: 30px;
+.unit-projects:before {
+    content: url('../img/link.svg');
+    width: 30px;
     height: 30px;
     position: absolute;
     top: 29%;
@@ -696,9 +607,9 @@ main
     bottom: 0;
     display: none;
 }
-.unit-projects:after
-{
-  content: url('../img/lupa.svg');
+
+.unit-projects:after {
+    content: url('../img/lupa.svg');
     width: 30px;
     height: 30px;
     position: absolute;
@@ -708,16 +619,13 @@ main
     bottom: 0;
     display: none;
 }
+
 .unit-projects:hover::before,
-.unit-projects:hover::after
-{
+.unit-projects:hover::after {
     display: block;
 }
 
-
-
-.unit-projects h3
-{
+.unit-projects h3 {
     font-family: Raleway;
     font-size: 20px;
     font-weight: 500;
@@ -728,8 +636,7 @@ main
     color: #c7b29a;
 }
 
-.unit-projects span
-{
+.unit-projects span {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
@@ -743,8 +650,7 @@ main
     color: #d1d1d1;
 }
 
-.projects-button
-{
+.projects-button {
     font-family: Raleway;
     font-size: 14px;
     font-weight: 700;
@@ -764,20 +670,17 @@ main
     transition: all 400ms ease;
 }
 
-.projects-button:hover
-{
+.projects-button:hover {
     background-color: #736a62;
 }
 
-.projects-button:active
-{
+.projects-button:active {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.video
-{
+.video {
     display: flex;
     max-width: 1920px;
     min-height: 705px;
@@ -786,19 +689,16 @@ main
     align-items: center;
 }
 
-.video ul
-{
+.video ul {
     max-width: 552px;
 }
 
-.video li
-{
+.video li {
     list-style-type: none;
     text-align: center;
 }
 
-.video li:nth-child(2)
-{
+.video li:nth-child(2) {
     font-family: Raleway;
     font-size: 30px;
     font-weight: 500;
@@ -806,8 +706,7 @@ main
     color: #fff;
 }
 
-.video li:nth-child(3)
-{
+.video li:nth-child(3) {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 300;
@@ -816,8 +715,7 @@ main
     color: #fff;
 }
 
-.video li:nth-child(4)
-{
+.video li:nth-child(4) {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
@@ -826,30 +724,26 @@ main
     color: #c7b299;
 }
 
-.mobile
-{
+.mobile {
     display: flex;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.mobile img
-{
+.mobile img {
     display: block;
     max-width: 100%;
     margin-top: 79px;
 }
 
-.mobile-text
-{
+.mobile-text {
     max-width: 657px;
     margin-top: 195px;
     padding-bottom: 50px;
 }
 
-.mobile-text h2
-{
+.mobile-text h2 {
     font-family: Raleway;
     font-size: 30px;
     font-weight: 600;
@@ -857,9 +751,7 @@ main
     color: #555;
 }
 
-
-.mobile-text p
-{
+.mobile-text p {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 300;
@@ -869,14 +761,12 @@ main
     color: #8c8c8c;
 }
 
-.mobile-text ul
-{
+.mobile-text ul {
     position: relative;
     margin-left: 60px;
 }
 
-.mobile-text li
-{
+.mobile-text li {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 300;
@@ -890,20 +780,18 @@ main
     background-position: 0 50%;
 }
 
-.stat
-{
+.stat {
     display: flex;
     min-height: 300px;
     background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
-    background:    -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
-    background:      -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
-    background:     -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
-    background:         linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+    background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
     justify-content: center;
 }
 
-.stat figure
-{
+.stat figure {
     display: flex;
     max-width: 1020px;
     padding-top: 65px;
@@ -912,20 +800,17 @@ main
     flex-wrap: wrap;
 }
 
-.stat ul
-{
+.stat ul {
     margin-right: 80px;
 }
 
-.stat li
-{
+.stat li {
     display: block;
     list-style-type: none;
     text-align: center;
 }
 
-.stat figure ul li:nth-child(2)
-{
+.stat figure ul li:nth-child(2) {
     font-family: Montserrat;
     font-size: 48px;
     font-weight: 200;
@@ -934,8 +819,7 @@ main
     color: #fff;
 }
 
-.stat figure ul li:nth-child(3)
-{
+.stat figure ul li:nth-child(3) {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
@@ -945,13 +829,11 @@ main
     color: #c7b299;
 }
 
-.posts
-{
+.posts {
     padding-top: 82px;
 }
 
-.posts h2
-{
+.posts h2 {
     font-family: Raleway;
     font-size: 30px;
     font-weight: 600;
@@ -960,8 +842,7 @@ main
     color: #555;
 }
 
-.posts p
-{
+.posts p {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 300;
@@ -973,8 +854,7 @@ main
     color: #8c8c8c;
 }
 
-.posts .wrapper-flex li a
-{
+.posts .wrapper-flex li a {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
@@ -987,15 +867,13 @@ main
     color: #c7b299;
 }
 
-.posts-slider
-{
+.posts-slider {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.posts-slider li:nth-child(1)
-{
+.posts-slider li:nth-child(1) {
     display: block;
     float: left;
     width: 22px;
@@ -1004,8 +882,7 @@ main
     padding-right: 5px;
 }
 
-.posts-slider li:nth-child(1) a
-{
+.posts-slider li:nth-child(1) a {
     display: block;
     width: 22px;
     height: 22px;
@@ -1013,8 +890,7 @@ main
     background-repeat: no-repeat;
 }
 
-.posts-slider li:nth-child(2)
-{
+.posts-slider li:nth-child(2) {
     display: block;
     float: left;
     width: 22px;
@@ -1023,8 +899,7 @@ main
     padding-left: 5px;
 }
 
-.posts-slider li:nth-child(2) a
-{
+.posts-slider li:nth-child(2) a {
     display: block;
     width: 22px;
     height: 22px;
@@ -1032,8 +907,7 @@ main
     background-repeat: no-repeat;
 }
 
-.company
-{
+.company {
     clear: both;
     width: 100%;
     margin-top: 80px;
@@ -1041,18 +915,16 @@ main
     background-size: 100% 100%;
 }
 
-.company ul
-{
+.company ul {
     display: flex;
     min-height: 489px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-	list-style-type: none;
+    list-style-type: none;
 }
 
-.company-image
-{
+.company-image {
     width: 210px;
     height: 210px;
     margin-top: 30px;
@@ -1116,6 +988,7 @@ main
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .company-image, .company-image:focus {
     -webkit-animation-name: company-image-float, company-image;
     animation-name: company-image-float, company-image;
@@ -1133,18 +1006,16 @@ main
     animation-direction: normal, alternate;
 }
 
-.company-image:hover{
-filter: sepia(100%);
+.company-image:hover {
+    filter: sepia(100%);
 }
 
-footer
-{
+footer {
     max-width: 1920px;
     margin: 0 auto;
 }
 
-.footer-up
-{
+.footer-up {
     display: flex;
     padding-top: 75px;
     background-color: #191919;
@@ -1152,8 +1023,7 @@ footer
     flex-wrap: wrap;
 }
 
-.logo-down
-{
+.logo-down {
     font-family: Raleway;
     font-size: 34px;
     margin-bottom: 29px;
@@ -1168,8 +1038,7 @@ footer
     margin-top: -25px;
 }
 
-.about p
-{
+.about p {
     font-family: Montserrat-Light, sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -1182,8 +1051,7 @@ footer
     color: #545454;
 }
 
-.about a:last-child
-{
+.about a:last-child {
     font-family: Montserrat-Light, sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -1194,16 +1062,14 @@ footer
     fill: #c7b299;
 }
 
-.recent-posts
-{
+.recent-posts {
     max-width: 260px;
     margin-right: 50px;
 }
 
 .recent-posts h3,
 .our-twitter h3,
-.dribbble-widget h3
-{
+.dribbble-widget h3 {
     font-family: Raleway-Bold, sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -1213,8 +1079,7 @@ footer
 }
 
 .recent-posts p,
-.our-twitter p
-{
+.our-twitter p {
     font-family: Montserrat-Light, sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -1225,8 +1090,7 @@ footer
 }
 
 .recent-posts data,
-.our-twitter data
-{
+.our-twitter data {
     font-family: Montserrat-light, sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -1236,14 +1100,12 @@ footer
     color: #363636;
 }
 
-.our-twitter
-{
+.our-twitter {
     max-width: 267px;
     margin-right: 35px;
 }
 
-.dribbble-widget
-{
+.dribbble-widget {
     display: flex;
     width: 270px;
     padding-bottom: 111px;
@@ -1251,8 +1113,7 @@ footer
     align-content: flex-start;
 }
 
-.dribbble-widget ul
-{
+.dribbble-widget ul {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
@@ -1263,40 +1124,44 @@ footer
     padding: 2px 2px;
 }
 
-.dribbble-widget img:hover
-{
-	filter: blur(1px);
+.dribbble-widget img:hover {
+    filter: blur(1px);
 }
 
-.copyright{
-	display: flex;
+.copyright {
+    display: flex;
     background-color: #111111;
     flex-wrap: wrap;
-	justify-content: space-around;
+    justify-content: space-around;
 }
+
 .copyright-left-side, .copyright-right-side {
-	font-family: Montserrat;
-	color: #959595;
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 20px;
-	margin: 45px 0;
-	
+    font-family: Montserrat;
+    color: #959595;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 45px 0;
+
 }
+
 .copyright-left-side {
-	margin-left: -45px;
+    margin-left: -45px;
 }
+
 .copyright-right-side {
-	margin-right: -62px;
+    margin-right: -62px;
 }
+
 .copyright p a {
-	font-family: Montserrat;
-	color: #D0D0D0;
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 20px;
-	text-decoration: none;
+    font-family: Montserrat;
+    color: #D0D0D0;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
 }
+
 .copyright p a:hover {
-	color: #c7b299;
+    color: #c7b299;
 }
