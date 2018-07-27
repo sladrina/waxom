@@ -1096,37 +1096,67 @@ footer {
 .copyright p a:hover {
     color: #c7b299;
 }
+
+#container {
+    background: #fff;
+}
+.slideout-menu {
+    position: fixed;
+    /*left: 0;*/
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+    background-color: #202020;
+    color: #fff;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+#mobile-menu > ul {
+
+}
+#mobile-menu > ul > li {
+
+}
+
 @media screen and (max-width: 400px) {
+    .logo {
+        padding: 0;
+        margin: 0 0 0 15px;
+    }
     .burger {
-        display: block;
+        display: inline-block;
         float: right;
-        margin-top: 13%;
-        margin-right: 5%;
+        margin-right: 15px;
     }
-    .burger:hover ~.nav-wrapper {
-        visibility: visible;
-    }
+    .header-wrapper, .slider-wrapper, .ideas, .textbox, .menu-projects, .wrapper-photo, .mobile img, .stat, .footer-up, .posts-slider,
     .nav-wrapper {
-        visibility: hidden;
-        margin: 0 auto;
-        height: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-wrapper li {
-        height: 40px;
-        text-align: center;
-        margin-top: 2px;
-    }
-    .nav-wrapper li a {
-        width: 100%;
-    }
-    .header-wrapper, .slider-wrapper, .ideas, .textbox, .menu-projects, .wrapper-photo, .mobile img, .stat, .footer-up, .posts-slider  {
         display: none;
     }
     header {
         max-height: 140px;
+    }
+    header nav {
+        padding: 30px 0;
+        text-align: left;
     }
     .services, .projects, .mobile-text, .posts {
         padding-top: 20px;
