@@ -1111,7 +1111,7 @@ footer {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     display: none;
-    background-color: #202020;
+    background-color: #313539;
     color: #fff;
 }
 
@@ -1131,10 +1131,22 @@ footer {
 }
 
 #mobile-menu > ul {
-
+    margin: 27px 0 0 35px;
 }
 #mobile-menu > ul > li {
+    list-style-type: none;
+}
 
+#mobile-menu > ul > li > a {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+#mobile-menu a:active {
+    color: #dcac76;
 }
 
 @media screen and (max-width: 400px) {
