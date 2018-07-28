@@ -1175,7 +1175,7 @@ footer {
         padding-bottom: 20px;
     }
     .services > .service {
-        margin-top: 15px;
+        margin: 15px 0 0 0;
     }
     .projects h2 , .mobile-text h2, .posts h2{
         font-size: 26px;
@@ -1213,6 +1213,7 @@ footer {
     .mobile-text p {
         font-size: 16px;
         text-align: -webkit-center;
+        padding-bottom: 0;
     }
     .mobile-text ul {
         margin-left: 24px;
@@ -1230,6 +1231,9 @@ footer {
     .company {
         margin-top: 0;
     }
+    .copyright  p a {
+        font-size: 12px;
+    }
     .copyright-left-side, .copyright-right-side {
         margin: 0;
     }
@@ -1237,10 +1241,11 @@ footer {
         margin-top: 20px;
     }
     .copyright-left-side p {
-        font-size: 12px;
+        font-size: 11px;
     }
     .copyright-right-side {
         margin-bottom: 20px;
+        font-size: 11px;
     }
     .company{
         clear: both;
