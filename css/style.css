@@ -1145,6 +1145,9 @@ footer {
     text-decoration: none;
     color: #fff;
 }
+#mobile-menu a:hover {
+    color: #ffe085;
+}
 #mobile-menu a:active {
     color: #dcac76;
 }
@@ -1177,14 +1180,27 @@ footer {
     .services > .service {
         margin: 15px 0 0 0;
     }
+    .services > .service li:nth-child(1) {
+        padding-bottom: 14px;
+    }
+    .services > .service li:nth-child(2) {
+        font-size: 20px;
+        padding-bottom: 14px;
+    }
+    .services > .service li:nth-child(3) {
+        font-size: 13px;
+        padding-bottom: 4px;
+        line-height: 22px;
+    }
     .projects h2 , .mobile-text h2, .posts h2{
-        font-size: 26px;
+        font-size: 25px;
         padding-bottom: 12px;
         text-align: center;
     }
     .projects p, .posts p {
         font-size: 14px;
         padding-bottom: 0;
+        margin: 0 5px 0 5px;
     }
     .projects-button {
         margin-top: 25px;
@@ -1219,9 +1235,10 @@ footer {
         margin-left: 24px;
     }
     .mobile-text li {
-        font-size: 15px;
+        font-size: 14px;
         padding-left: 34px;
         margin-top: 10px;
+        line-height: 25px;
     }
     .wrapper-flex ul {
         margin-top: 20px;
